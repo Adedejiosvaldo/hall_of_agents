@@ -42,11 +42,21 @@ horribly. No one should ever buy this
 from anyone. I want my money back.
 """
 
-prompt = f"""
-Rewrite {customer_review} in a more polite tone and then translate
-the new review message into spanish
-"""
 
-rewrite = get_completion(prompt=prompt)
+# rewrite = get_completion(prompt=prompt)
 
-print(rewrite)
+# print(rewrite)
+
+if __name__ == "__main__":
+    # Define the prompt
+    input_text = ""
+    input_text = input("Enter the review: ")
+
+    prompt = f""" Rewrite {input_text} in a more polite tone and then translate
+    the new review message into spanish
+    """
+
+    print("_____________Loading_____________")
+    # Get the completion
+    print(get_completion(prompt=prompt))
+    # print(rewrite)
