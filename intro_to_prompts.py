@@ -24,7 +24,7 @@ def get_completion(prompt: str, model=model):
     # # Updated from openai.chat.completions
     response = model.invoke(messages)
     return response.content
- 
+
 
 # def get_completion(prompt: str, model=model):
 #     messages = [{"role": "user", "content": prompt}]
@@ -43,7 +43,7 @@ from anyone. I want my money back.
 """
 
 prompt = f"""
-Rewrite the customer review in a more polite tone and then translate
+Rewrite {customer_review} in a more polite tone and then translate
 the new review message into spanish
 """
 
