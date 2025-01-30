@@ -57,4 +57,5 @@ email: {email}
 prompt_template = ChatPromptTemplate.from_template(email_template)
 messages = prompt_template.format_messages(email=email_response)
 response = model.invoke(messages)
-print(response.content)
+# print(response.content)
+print(type(response.content))
